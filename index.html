@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dio si Agen Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header class="top">
+  <h1>🤖 Dio si Agen Data</h1>
+  <nav id="tabs" aria-label="Pilih misi"></nav>
+</header>
+
+<main class="grid">
+  <section class="kartu" id="misi"></section>
+
+  <section class="kartu" id="panggung">
+    <div class="dio"><span class="avatar">🤖</span><p id="bicara" class="gelembung">Halo! Aku Dio. Ayo bantu aku!</p></div>
+    <div id="stage"></div>
+  </section>
+  
+  <section  id="ruang"><div id="blocklyDiv"></div></section>
+
+  <section id="tombol">
+    <button id="btnRun" class="btn jalan">▶ Jalankan!</button>
+    <button id="btnReset" class="btn ulang">↺ Ulang</button>
+  </section>
+
+  <section id="pesan" class="pesan" aria-live="polite"></section>
+</main>
+
+<footer class="kaki"><span id="info"></span> <a href="#" id="btnLog">unduh log</a></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/blockly@10.4.3/blockly_compressed.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blockly@10.4.3/msg/en.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
